@@ -43,6 +43,8 @@ public class FirstFragment extends Fragment {
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
+        Toast.makeText(getActivity(), "onCreateView() is Called", Toast.LENGTH_SHORT).show();
+
         View view = inflater.inflate(R.layout.fragment_first, container, false);
 
         Button firstBtn = view.findViewById(R.id.btn_fag1);
